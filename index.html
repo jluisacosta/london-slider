@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="utf-8" />
+        <title>London Slider</title>
+        <link type="text/css" rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="slider.js"></script>
+    </head>
+    <body onload="inicializa_elementos()">
+        <div id="contenedor">
+            <ul id="menu">
+                <li onclick="carga_imagen(1)">
+                    <img src="./img/ima1.png"/>
+                    <p id="opEyes">The London Eyes</p>
+                </li>
+                <li onclick="carga_imagen(2)">
+                    <img src="./img/ima2.png"/>
+                    <p id="opWest">Palace of</br>Westminster</p>
+                </li>
+                <li onclick="carga_imagen(3)">
+                    <img src="./img/ima3.png"/>
+                    <p id="opBuck">Buckingham</br>Palace</p>
+                </li>
+                <li onclick="carga_imagen(4)">
+                    <img src="./img/ima4.png"/>
+                    <p id="opTow">Tower Bridge</p>
+                </li>
+            </ul>
+            <div id="slider">
+                <div class="capa" id="capa2">
+                    <div class="capa" id="capa1"></div>
+                </div>
+                <div id="info">
+                    <div id="icono"></div>
+                    <p id="texto"></p>
+                </div>
+                <div class="flecha" id="flecha_izquierda" onclick="atras()"></div>
+                <div class="flecha" id="flecha_derecha" onclick="adelante()"></div>
+            </div>
+        </div>
+    </body>
+</html>

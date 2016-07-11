@@ -1,0 +1,161 @@
+body{
+	background-color: #000;
+	padding: 0px;
+	margin: 0px;
+}
+
+#contenedor{
+	width:1090px;
+	height: 633px;
+	background-color: #771725;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	margin-top: -316px;
+  	margin-left: -545px;
+  	background-image: url('./img/slider-fondo.png');
+}
+
+#menu{
+	list-style: none;
+	position: absolute;
+	top:190px;
+	left:19px;
+	margin: 0px;
+}
+
+#menu li{
+	width: 260px;
+	height: 89px;
+	border-top:1px solid white;
+	border-bottom: 1px solid white;
+}
+
+#menu li img{
+	position: relative;
+	top:13px;
+
+	transition: transform 1s;
+	-webkit-transition: -webkit-transform 1s;
+	-moz-transition: -moz-tranform 1s;
+	-o-transition: -o-transform 1s;
+	-ms-transition: -ms-transform 1s;
+}
+
+#menu li:hover img{
+	transform:scale(1.2);
+	-webkit-transform:scale(1.2);
+	-moz-transform:scale(1.2);
+	-o-transform:scale(1.2);
+	-ms-transform:scale(1.2);
+}
+
+#menu p{
+
+	display: inline-block;
+	color: white;
+	font: 16px Verdana;
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+}
+
+#opEyes{
+	top:-10px;
+	left: 10px;
+}
+
+#opWest{
+	top:0px;
+	left: 30px;
+}
+
+#opBuck{
+	top:0px;
+	left: 35px;
+}
+
+#opTow{
+	top:-10px;
+	left: 27px;
+}
+
+#menu li:hover #opEyes{
+	color: #ddadc7;
+}
+
+#menu li:hover #opWest{
+	color: #90c456;
+}
+
+#menu li:hover #opBuck{
+	color: #5d9dcd;
+}
+
+#menu li:hover #opTow{
+	color: #c55e0f;
+}
+
+#slider{
+	width: 665px;
+	height: 359px;
+	position: relative;
+	top: 192px;
+	left: 359px;
+	overflow: hidden;
+}
+
+#slider *{
+	position: absolute;
+}
+
+.capa{
+	width: 665px;
+	height: 359px;
+}
+
+#info{
+	width: 247px;
+	height: 355px;
+	background-color: black;
+	top:2px;
+	left:-250px;
+}
+
+#icono{
+	top:20px;
+	width: 247px;
+	height: 165px;
+	background-repeat:no-repeat;
+}
+
+#texto{
+	top:135px;
+	left:20px;
+	color:white;
+	font: 15px Arial;
+	width: 207px;
+	text-align: justify;
+}
+
+.flecha{
+	width: 43px;
+	height: 43px;
+	top:307px;
+	opacity: .5;
+}
+
+#flecha_izquierda{
+	left: 15px;
+	visibility: hidden;
+	background-image: url('./img/flecha1.png');
+}
+
+#flecha_derecha{
+	left: 607px;
+	background-image: url('./img/flecha2.png');
+}
+
+.flecha:hover{
+	opacity: 1;
+}
